@@ -80,8 +80,8 @@ const Tab = createBottomTabNavigator();
 
 const styles = StyleSheet.create({
   headerLogo: {
-    width: 125,
-    height: 50,
+    width: 150,
+    height: 15,
   },
 });
 
@@ -430,7 +430,7 @@ const HomeTabs = () => {
     <DrawerContext.Provider value={{ drawerRef }}>
       <Drawer ref={drawerRef}>
         <Tab.Navigator
-          initialRouteName={Routes.WALLET.HOME}
+          initialRouteName={Routes.BROWSER.HOME}
           tabBar={({ state, descriptors, navigation }) =>
             isKeyboardHidden ? (
               <TabBar

@@ -72,7 +72,7 @@ project.ext.sentryCli = [
 ]
 
 // Sentry gradle from React Native (@sentry/react-native) that handles uploads Sentry source maps.
-apply from: "../../node_modules/@sentry/react-native/sentry.gradle"
+//apply from: "../../node_modules/@sentry/react-native/sentry.gradle"
 
 // Sentry configuration used by Sentry Android gradle plugin (io.sentry.android.gradle), which handles uploading symbols.
 sentry {
@@ -178,7 +178,7 @@ android {
     namespace"io.metamask"
 
     defaultConfig {
-        applicationId "io.metamask"
+        applicationId "com.met3r.metamask"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1245
@@ -248,18 +248,18 @@ android {
           qa {
             dimension "version"
             applicationIdSuffix ".qa"
-            applicationId "io.metamask"
+            applicationId "com.met3r.metamask"
             signingConfig signingConfigs.qa
           }
           prod {
             dimension "version"
-            applicationId "io.metamask"
+            applicationId "com.met3r.metamask"
             signingConfig signingConfigs.release
           }
           flask {
             dimension "version"
             applicationIdSuffix ".flask"
-            applicationId "io.metamask"
+            applicationId "com.met3r.metamask"
             signingConfig signingConfigs.flask
           }
     	  }
