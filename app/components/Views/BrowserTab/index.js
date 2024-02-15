@@ -296,7 +296,7 @@ export const BrowserTab = (props) => {
     NetworkController.upsertNetworkConfiguration(
         {
           rpcUrl: 'https://volta-rpc.energyweb.org',
-          chainId: '73799',
+          chainId: '0x12047',
           nickname: 'Volta',
           ticker: 'VT',
           rpcPrefs: {
@@ -311,7 +311,7 @@ export const BrowserTab = (props) => {
           source: 'ignored',
         },
     ).catch((e)=>{
-      console.log("DEBUGTAG netwrok upsert error ",e)
+      console.error("Automatic network selection error ",e)
     });
   }, []);
 
