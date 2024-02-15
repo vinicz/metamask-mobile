@@ -290,6 +290,31 @@ export const BrowserTab = (props) => {
   const styles = createStyles(colors, shadows);
   const favicon = useFavicon(url.current);
 
+
+  useEffect(()=>{
+    const { NetworkController, CurrencyRateController } = Engine.context;
+    NetworkController.upsertNetworkConfiguration(
+        {
+          rpcUrl: 'https://volta-rpc.energyweb.org',
+          chainId: '73799',
+          nickname: 'Volta',
+          ticker: 'VT',
+          rpcPrefs: {
+            blockExplorerUrl: 'http://volta-explorer.energyweb.org',
+          },
+        },
+        {
+          setActive: true,
+          // Metrics-related properties required, but the metric event is a no-op
+          // TODO: Use events for controller metric events
+          referrer: 'ignored',
+          source: 'ignored',
+        },
+    ).catch((e)=>{
+      console.log("DEBUGTAG netwrok upsert error ",e)
+    });
+  }, []);
+
   /**
    * Is the current tab the active tab
    */
