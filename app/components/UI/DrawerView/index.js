@@ -119,8 +119,8 @@ const createStyles = (colors) =>
     },
     metamaskName: {
       marginTop: 4,
-      width: 90,
-      height: 18,
+      width: 150,
+      height: 15,
       tintColor: colors.text.default,
     },
     account: {

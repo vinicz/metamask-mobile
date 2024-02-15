@@ -12,7 +12,7 @@ import AddressBarScreen from '../screen-objects/BrowserObject/AddressBarScreen';
 
 Then(/^"([^"]*)?" carousel item is displayed/, async (text) => {
   switch (text) {
-    case 'Welcome to MetaMask':
+    case 'Welcome to Met3rMask':
       await WelcomeScreen.verifyCarouselTitle(1);
       break;
     case 'Manage your digital assets':

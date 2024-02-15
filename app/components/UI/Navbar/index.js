@@ -69,7 +69,7 @@ const trackEventWithParameters = (event, params) => {
 
 const styles = StyleSheet.create({
   metamaskName: {
-    width: 122,
+    width: 200,
     height: 15,
   },
   metamaskFox: {
@@ -666,7 +666,7 @@ export function getOnboardingNavbarOptions(
       elevation: 0,
     },
     metamaskName: {
-      width: 122,
+      width: 200,
       height: 15,
       tintColor: themeColors.text.default,
     },
@@ -703,7 +703,7 @@ export function getTransparentOnboardingNavbarOptions(themeColors) {
       elevation: 0,
     },
     metamaskName: {
-      width: 122,
+      width: 200,
       height: 15,
       tintColor: themeColors.text.default,
     },
@@ -737,7 +737,7 @@ export function getTransparentBackOnboardingNavbarOptions(themeColors) {
       elevation: 0,
     },
     metamaskName: {
-      width: 122,
+      width: 200,
       height: 15,
       tintColor: themeColors.text.default,
     },
@@ -774,7 +774,7 @@ export function getOptinMetricsNavbarOptions(themeColors) {
       height: 100,
     },
     metamaskName: {
-      width: 122,
+      width: 200,
       height: 15,
       tintColor: themeColors.text.default,
     },
